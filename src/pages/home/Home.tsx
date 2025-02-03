@@ -1,6 +1,5 @@
 import { Outlet, useParams } from "react-router";
 import { Layout } from "../../components";
-import { Header } from "../../style";
 import { NavBar } from "../../components/nav-bar";
 import { pageRoutes } from "../../useRouter";
 
@@ -14,7 +13,7 @@ export const Home = () => {
           path: route.path,
         }))}
       />
-      {params["*"] ? <Outlet /> : <Header>Home</Header>}
+      {params["*"] && <Outlet />}
     </Layout>
   );
 };
