@@ -14,7 +14,10 @@ export const NavBar = ({ routes }: NavBarProps) => {
   return (
     <ButtonGroup>
       {routes.map((route) => (
-        <Button key={route.path} onClick={() => navigate(route.path)}>
+        <Button
+          key={route.path}
+          onClick={() => navigate(`/queen-of-beans/${route.path}`)}
+        >
           {route.label}
         </Button>
       ))}
