@@ -1,5 +1,9 @@
-import { Paragraph } from "../../components/content";
+import { Page, Paragraph } from "../../components/content";
 
 export const ArtPractice = () => {
-  return <Paragraph>this is my art practice.</Paragraph>;
+  return (
+    <Page>
+      <Paragraph>this is my art practice.</Paragraph>
+    </Page>
+  );
 };
