@@ -12,7 +12,7 @@ export const useRouter = () => {
       ),
       children: [
         {
-          path: "/about",
+          path: "about",
           element: <div>About</div>,
         },
       ],
