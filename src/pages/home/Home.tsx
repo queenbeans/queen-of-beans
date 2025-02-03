@@ -1,7 +1,7 @@
 import { Outlet, useParams } from "react-router";
 import { Layout, NavBar } from "../../components";
 import { pageRoutes } from "../../useRouter";
-import { DisclaimerText, Paragraph } from "../../components/content";
+import { DisclaimerText } from "../../components/content";
 
 export const Home = () => {
   const params = useParams();
