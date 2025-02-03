@@ -12,22 +12,30 @@ const Container = styled.div`
 `;
 
 const Header = styled.div`
-  margin-bottom: 0.3rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 const LocationAndDateContainer = styled.div`
   display: flex;
-  gap: 1rem;
+  gap: 0.8rem;
+  font-size: 0.6rem;
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
 `;
 
 const List = styled.ul`
   padding-left: 3ch;
-  margin-top: 0.5rem;
-
+  margin: unset;
   li {
     margin-bottom: 0.5rem;
+    font-size: 0.7rem;
   }
 `;
 
@@ -40,7 +48,7 @@ export const ResumeBlock = ({
   return (
     <Container>
       <Header>
-        <div>{title}</div>
+        <h4>{title}</h4>
         <LocationAndDateContainer>
           <div>{location}</div>
           <div>({dates})</div>
