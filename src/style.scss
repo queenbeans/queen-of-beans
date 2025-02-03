@@ -3,16 +3,34 @@
 
 .font {
   font-family: "Merriweather", serif;
-  font-weight: 300;
   font-style: normal;
+  color: white;
+}
+
+.gradient {
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
 }
 
 body {
   margin: 0;
   padding: 0;
+  @extend .gradient;
   @extend .font;
-}
 
-button {
-  @extend .font;
+  button {
+    @extend .font;
+    font-weight: bolder;
+  }
+  p {
+    @extend .font;
+    font-weight: 300;
+  }
 }
