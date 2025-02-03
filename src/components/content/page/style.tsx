@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
 export const Page = styled.div`
-  width: 50%;
+  width: 40%;
   padding: 1rem;
 `;

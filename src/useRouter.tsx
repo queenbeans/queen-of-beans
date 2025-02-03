@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router";
-import { About, Home, Resume } from "./pages";
+import { About, ArtPractice, Home, Resume } from "./pages";
 
 export const pageRoutes = [
   {
@@ -11,6 +11,11 @@ export const pageRoutes = [
     name: "Resume",
     path: "resume",
     element: <Resume />,
+  },
+  {
+    name: "Art Practice",
+    path: "art-practice",
+    element: <ArtPractice />,
   },
 ];
 export const useRouter = () => {

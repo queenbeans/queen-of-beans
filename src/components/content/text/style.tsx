@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const Paragraph = styled.p`
   color: #333;
-  font-size: 1rem;
-  margin: 0.5rem 0;
+  font-size: 1.3rem;
+  margin: 0.8rem 0;
+`;
+
+export const DisclaimerText = styled(Paragraph)`
+  font-size: 0.8rem;
+  width: 50%;
 `;
