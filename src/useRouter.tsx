@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router";
-import { About, ArtPractice, Home, Resume } from "./pages";
+import { About, Playground, Home, Resume } from "./pages";
 
 export const pageRoutes = [
   {
@@ -13,9 +13,9 @@ export const pageRoutes = [
     element: <Resume />,
   },
   {
-    name: "Art Practice",
-    path: "art-practice",
-    element: <ArtPractice />,
+    name: "Playground / Sandbox",
+    path: "playground",
+    element: <Playground />,
   },
 ];
 export const useRouter = () => {

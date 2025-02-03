@@ -33,4 +33,9 @@ body {
     @extend .font;
     font-weight: 300;
   }
+
+  li {
+    @extend .font;
+    font-size: 0.85em;
+  }
 }
