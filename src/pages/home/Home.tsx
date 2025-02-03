@@ -1,6 +1,5 @@
 import { Outlet, useParams } from "react-router";
-import { Layout } from "../../components";
-import { NavBar } from "../../components/nav-bar";
+import { Layout, NavBar } from "../../components";
 import { pageRoutes } from "../../useRouter";
 
 export const Home = () => {
