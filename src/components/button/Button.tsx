@@ -4,10 +4,10 @@ export const Button = styled.button`
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 1rem;
   padding: 0.5rem 1rem;
+  background-color: transparent;
 
   &:hover {
-    background-color: #ff6a88;
+    background-color: rgb(250, 169, 185);
   }
 `;
