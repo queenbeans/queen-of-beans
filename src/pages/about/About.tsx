@@ -25,12 +25,6 @@ export const About = () => {
         human rights / justice around the globe and within their local
         community.
       </Paragraph>
-      <Paragraph>
-        Note, this website makes use of client side routing via React Router and
-        is served using Github pages. If you attempt to refresh the page on a
-        route other than the root, you will receive a 404 error. This is
-        expected behavior as Github pages does not support server side routing.
-      </Paragraph>
     </Page>
   );
 };
