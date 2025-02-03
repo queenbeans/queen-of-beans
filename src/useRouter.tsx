@@ -1,15 +1,16 @@
 import { createBrowserRouter, Navigate } from "react-router";
-import { Home } from "./home";
+import { Home } from "./pages/home";
+import { About } from "./pages/about";
 
 export const useRouter = () => {
   return createBrowserRouter([
     {
-      path: "/queen-of-beans",
+      path: "/queen-of-beans/*",
       element: <Home />,
       children: [
         {
           path: "about",
-          element: <div>About</div>,
+          element: <About />,
         },
         {
           path: "*",
