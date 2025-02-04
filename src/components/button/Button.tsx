@@ -11,3 +11,19 @@ export const Button = styled.button`
     background-color: rgb(250, 169, 185);
   }
 `;
+
+export const GhostButton = styled(Button)`
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+`;
+
+export const ButtonNoHover = styled(Button)`
+  &:hover {
+    background-color: transparent;
+  }
+`;

@@ -1,5 +1,4 @@
 import { ResumeBlock } from "../../components/content";
-import { Header } from "../../style";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -19,10 +18,10 @@ const Section = styled.div`
 export const Playground = () => {
   return (
     <>
-      <Header>
+      <h1>
         This is a space for me to sandbox the reusable components leveraged on
         this site
-      </Header>
+      </h1>
       <Container>
         <Section>
           <h1>Resume block component</h1>

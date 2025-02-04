@@ -1,14 +1,13 @@
 import { Outlet, useNavigate, useParams } from "react-router";
-import { Button, DropdownMenu, NavBar } from "../../components";
+import { DropdownMenu, NavBar } from "../../components";
 import { pageRoutes } from "../../useRouter";
 import { DisclaimerText, Page, Paragraph } from "../../components/content";
 import styled from "styled-components";
+import { ButtonNoHover, GhostButton } from "../../components/button/Button";
 
 const Layout = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 15vh;
-  padding: 1rem;
   @media (max-width: 768px) {
     gap: 0;
   }
@@ -17,6 +16,7 @@ const Layout = styled.div`
 const NavBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  margin: 0.8rem;
 `;
 
 export const Content = styled.div`
@@ -33,9 +33,9 @@ export const Home = () => {
   return (
     <Layout>
       <NavBarContainer>
-        <Button onClick={() => navigate("/queen-of-beans")}>
+        <ButtonNoHover onClick={() => navigate("/queen-of-beans/")}>
           Queen of beans
-        </Button>
+        </ButtonNoHover>
 
         <DropdownMenu>
           <NavBar
@@ -51,6 +51,7 @@ export const Home = () => {
           <Outlet />
         ) : (
           <>
+            <h1>Queen of Beans</h1>
             <Page>
               <Paragraph>
                 Hello! My name is Davian (aka Queen Beans). I created this
@@ -60,6 +61,9 @@ export const Home = () => {
                 work!
               </Paragraph>
             </Page>
+            <GhostButton onClick={() => navigate("/queen-of-beans/about")}>
+              About me
+            </GhostButton>
             <DisclaimerText>
               Note, this website makes use of client side routing via React
               Router and is served using Github pages. If you attempt to refresh
