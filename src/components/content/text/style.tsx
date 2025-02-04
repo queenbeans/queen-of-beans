@@ -5,7 +5,7 @@ export const Paragraph = styled.p`
 `;
 
 export const DisclaimerText = styled(Paragraph)`
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   width: 80%;
 
   @media (max-width: 768px) {
