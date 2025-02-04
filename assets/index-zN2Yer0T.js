@@ -140,6 +140,11 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
   width: fit-content;
   background-color: rgba(255, 255, 255, 0.3);
   border: 1px solid white;
+
+  @media (max-width: 768px) {
+    top: 0.5rem;
+    right: 3rem;
+  }
 `,Yv=({children:r})=>{const[i,a]=z.useState(!1),s=z.useCallback(()=>{a(d=>!d)},[]),c=z.useRef(null);return z.useEffect(()=>{const d=p=>{c.current&&!c.current.contains(p.target)&&a(!1)};return document.addEventListener("mousedown",d),()=>{document.removeEventListener("mousedown",d)}},[]),K.jsxs(Qv,{ref:c,children:[K.jsx(ia,{onClick:s,children:K.jsx(Wv,{})}),i&&K.jsx(Kv,{onClick:()=>a(!1),children:r})]})},Gv=Je.div`
   display: flex;
   flex-direction: column;
