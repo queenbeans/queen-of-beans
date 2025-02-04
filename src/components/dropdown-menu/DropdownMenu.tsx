@@ -14,6 +14,11 @@ const DropdownMenuButtonGroup = styled(ButtonGroup)`
   width: fit-content;
   background-color: rgba(255, 255, 255, 0.3);
   border: 1px solid white;
+
+  @media (max-width: 768px) {
+    top: 0.5rem;
+    right: 3rem;
+  }
 `;
 
 export interface DropdownMenuProps {
