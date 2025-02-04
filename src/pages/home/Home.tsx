@@ -1,5 +1,5 @@
 import { Outlet, useNavigate, useParams } from "react-router";
-import { Button, NavBar } from "../../components";
+import { Button, DropdownMenu, NavBar } from "../../components";
 import { pageRoutes } from "../../useRouter";
 import { DisclaimerText, Page, Paragraph } from "../../components/content";
 import styled from "styled-components";
@@ -7,8 +7,11 @@ import styled from "styled-components";
 const Layout = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 15vh;
   padding: 1rem;
+  @media (max-width: 768px) {
+    gap: 0;
+  }
 `;
 
 const NavBarContainer = styled.div`
@@ -23,6 +26,7 @@ export const Content = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
 export const Home = () => {
   const params = useParams();
   const navigate = useNavigate();
@@ -32,12 +36,15 @@ export const Home = () => {
         <Button onClick={() => navigate("/queen-of-beans")}>
           Queen of beans
         </Button>
-        <NavBar
-          routes={pageRoutes.map((route) => ({
-            label: route.name,
-            path: route.path,
-          }))}
-        />
+
+        <DropdownMenu>
+          <NavBar
+            routes={pageRoutes.map((route) => ({
+              label: route.name,
+              path: route.path,
+            }))}
+          />
+        </DropdownMenu>
       </NavBarContainer>
       <Content>
         {params["*"] ? (
