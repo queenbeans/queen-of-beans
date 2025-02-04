@@ -74,10 +74,9 @@ Please change the parent <Route path="${$}"> to <Route path="${$==="/"?"*":`${$}
     background-color: transparent;
   }
 `,cl=Je.p`
-  font-size: 1.1rem;
   margin: 0.8rem 0;
 `,Mv=Je(cl)`
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   width: 80%;
 
   @media (max-width: 768px) {
