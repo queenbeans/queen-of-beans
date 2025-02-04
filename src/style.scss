@@ -45,12 +45,12 @@ body {
   padding: 1rem;
   @extend .gradient;
 
-  div,
   button {
     @extend .semibold-font;
     font-weight: bolder;
   }
-  p {
+  p,
+  div {
     @extend .content-font;
     font-weight: 300;
   }
