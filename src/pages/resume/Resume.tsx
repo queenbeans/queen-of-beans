@@ -2,9 +2,9 @@ import { Page, ResumeBlock, ResumeContainer } from "../../components/content";
 
 export const Resume = () => {
   return (
-    <>
-      <h1>Resume</h1>
-      <Page>
+    <Page
+      title="Resume"
+      content={
         <ResumeContainer>
           <ResumeBlock
             title="Handshake"
@@ -35,7 +35,7 @@ export const Resume = () => {
             <div>Experience details will go here.</div>
           </ResumeBlock>
         </ResumeContainer>
-      </Page>
-    </>
+      }
+    />
   );
 };

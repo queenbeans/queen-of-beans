@@ -1,12 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Dongle&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 /* Global styles */
 
-.font {
+.content-font {
   font-family: "Merriweather", serif;
-  font-style: normal;
   color: white;
+  font-weight: 300;
   @media screen and (max-width: 768px) {
     font-size: 0.8em;
+  }
+}
+
+.header-font {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  color: white;
+  @media screen and (max-width: 768px) {
+    font-size: 1.5em;
+  }
+}
+
+.semibold-font {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  color: white;
+  @media screen and (max-width: 768px) {
+    font-size: 1.5em;
   }
 }
 
@@ -26,19 +44,28 @@ body {
   margin: 0;
   padding: 0;
   @extend .gradient;
-  @extend .font;
 
+  div,
   button {
-    @extend .font;
+    @extend .semibold-font;
     font-weight: bolder;
   }
   p {
-    @extend .font;
+    @extend .content-font;
     font-weight: 300;
   }
 
   li {
-    @extend .font;
+    @extend .content-font;
     font-size: 0.85em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @extend .header-font;
   }
 }

@@ -51,19 +51,23 @@ export const Home = () => {
           <Outlet />
         ) : (
           <>
-            <h1>Queen of Beans</h1>
-            <Page>
-              <Paragraph>
-                Hello! My name is Davian (aka Queen Beans). I created this
-                website to showcase my personal programming and art practices.
-                This site also functions as a way to experiment with different
-                web technologies. Feel free to explore the site and check out my
-                work!
-              </Paragraph>
-            </Page>
-            <GhostButton onClick={() => navigate("/queen-of-beans/about")}>
-              About me
-            </GhostButton>
+            <Page
+              title="Queen of beans"
+              content={
+                <Paragraph>
+                  Hello! My name is Davian (aka Queen Beans). I created this
+                  website to showcase my personal programming and art practices.
+                  This site also functions as a way to experiment with different
+                  web technologies. Feel free to explore the site and check out
+                  my work!
+                </Paragraph>
+              }
+              footer={
+                <GhostButton onClick={() => navigate("/queen-of-beans/about")}>
+                  About me
+                </GhostButton>
+              }
+            />
             <DisclaimerText>
               Note, this website makes use of client side routing via React
               Router and is served using Github pages. If you attempt to refresh
