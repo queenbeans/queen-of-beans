@@ -6,7 +6,7 @@
   color: white;
   font-weight: 300;
   @media screen and (max-width: 768px) {
-    font-size: 0.8em;
+    font-size: 0.8rem;
   }
 }
 
@@ -15,7 +15,7 @@
   font-weight: 900;
   color: white;
   @media screen and (max-width: 768px) {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
 
@@ -24,7 +24,7 @@
   font-weight: 700;
   color: white;
   @media screen and (max-width: 768px) {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 }
 
@@ -42,7 +42,7 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 1rem;
   @extend .gradient;
 
   div,
@@ -57,7 +57,7 @@ body {
 
   li {
     @extend .content-font;
-    font-size: 0.85em;
+    font-size: 0.85rem;
   }
 
   h1,

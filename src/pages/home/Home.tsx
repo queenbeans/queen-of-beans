@@ -16,7 +16,6 @@ const Layout = styled.div`
 const NavBarContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 0.8rem;
 `;
 
 export const Content = styled.div`

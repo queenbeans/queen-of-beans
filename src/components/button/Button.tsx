@@ -23,6 +23,7 @@ export const GhostButton = styled(Button)`
 `;
 
 export const ButtonNoHover = styled(Button)`
+  padding: 0;
   &:hover {
     background-color: transparent;
   }
